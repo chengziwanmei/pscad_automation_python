@@ -1,0 +1,10 @@
+2020.11.06
+```python
+#通过从master复制组件，粘贴至自己的项目中
+master_main=pscad.project("Master").user_canvas('Main')
+#pscad.project('Master').focus()
+master_main.select_components(x1=179,y1=140,x2=256,y2=81)#选中一个组件
+master_main.copy()
+pscad.project(project_name).focus()
+main.paste()
+```
